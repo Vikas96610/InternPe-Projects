@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+
+    <div class="calculator bg-gray-800 p-6 rounded-xl shadow-2xl w-full max-w-sm">
+        <div class="display bg-gray-700 text-white text-right p-4 rounded-lg mb-4 text-3xl font-mono overflow-hidden">
+            0
+        </div>
+        <div class="grid grid-cols-4 gap-4">
+            <button class="bg-red-500 text-white p-4 rounded-xl text-2xl font-bold hover:bg-red-600 transition-colors">AC</button>
+            <button class="bg-orange-500 text-white p-4 rounded-xl text-2xl font-bold hover:bg-orange-600 transition-colors">Del</button>
+            <button class="bg-gray-600 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-700 transition-colors">/</button>
+            <button class="bg-gray-600 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-700 transition-colors">*</button>
+
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">7</button>
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">8</button>
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">9</button>
+            <button class="bg-gray-600 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-700 transition-colors">-</button>
+
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">4</button>
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">5</button>
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">6</button>
+            <button class="bg-gray-600 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-700 transition-colors">+</button>
+
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">1</button>
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">2</button>
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">3</button>
+            <button class="row-span-2 bg-green-500 text-white p-4 rounded-xl text-2xl font-bold hover:bg-green-600 transition-colors">=</button>
+
+            <button class="col-span-2 bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">0</button>
+            <button class="bg-gray-700 text-white p-4 rounded-xl text-2xl font-bold hover:bg-gray-600 transition-colors">.</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
