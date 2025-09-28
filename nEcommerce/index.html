@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">ShopEase</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="cart-btn">🛒 Cart</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to ShopEase</h1>
+      <p>Your one-stop shop for stylish products</p>
+      <a href="#products" class="shop-btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <img src="images/Shoes.jpg" alt="Shoes">
+        <h3>Shoes</h3>
+        <p>$50</p>
+        <button class="add-to-cart" data-name="Shoes" data-price="50">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/watch.jpg" alt="Watch">
+        <h3>Watch</h3>
+        <p>$80</p>
+        <button class="add-to-cart" data-name="Watch" data-price="80">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Headphones.jpg" alt="Headphones">
+        <h3>Headphones</h3>
+        <p>$30</p>
+        <button class="add-to-cart" data-name="Headphones" data-price="30">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Backpack.jpg" alt="Backpack">
+        <h3>Backpack</h3>
+        <p>$60</p>
+        <button class="add-to-cart" data-name="Backpack" data-price="60">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Sunglasses.png" alt="Sunglasses">
+        <h3>Sunglasses</h3>
+        <p>$25</p>
+        <button class="add-to-cart" data-name="Sunglasses" data-price="25">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img src="images/Laptop.jpg" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>$950</p>
+        <button class="add-to-cart" data-name="Laptop" data-price="950">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@shopease.com</p>
+    <p>Phone: +91 9876543210</p>
+  </section>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <span id="close-cart">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0</span></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 ShopEase. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
