@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple To‑Do List App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app" aria-label="To‑Do List Application">
+<header>
+<div>
+<h1>To‑Do List</h1>
+<div class="meta">Simple, fast and stores tasks in your browser.</div>
+</div>
+<div style="margin-left:auto" class="small">Tip: Press Enter to add</div>
+</header>
+
+
+<form id="addForm" aria-label="Add task form">
+<input id="taskInput" type="text" placeholder="Add a new task..." autocomplete="off" required />
+<button type="submit">Add</button>
+</form>
+
+
+<div class="controls">
+<div class="small" id="stats">0 tasks</div>
+<div style="margin-left:auto;display:flex;gap:8px">
+<button class="btn-ghost" id="filterAll">All</button>
+<button class="btn-ghost" id="filterActive">Active</button>
+<button class="btn-ghost" id="filterCompleted">Completed</button>
+<button class="btn-ghost" id="clearCompleted">Clear Completed</button>
+</div>
+</div>
+
+
+<section class="list" id="list" aria-live="polite"></section>
+
+
+<footer style="margin-top:14px" class="small">Made with ❤️ — LocalStorage enabled. Double-click task to edit.</footer>
+</main>
+
+
+<script src="script.js"></script>
+</body>
+</html>
